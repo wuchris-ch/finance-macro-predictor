@@ -8,19 +8,17 @@ This project provides **machine learning-based predictions** of the U.S. M2 mone
 
 ```mermaid
 graph LR
-    A[📈 FRED M2 Data<br/>1959-2025] --> B[🤖 Random Forest<br/>ML Model]
-    B --> C[🔮 Future Predictions<br/>1-24 months]
-    B --> D[📡 MCP Server]
-    D --> E[💬 Claude Desktop]
-    D --> F[🔧 Other MCP Clients]
+    A[FRED M2 Data<br/>1959-2025] --> B[Random Forest<br/>ML Model]
+    B --> C[Future Predictions<br/>1-24 months]
+    C --> D[MCP Server<br/>predict_m2_future<br/>get_m2_current<br/>get_m2_statistics]
     
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#e8f5e9
-    style D fill:#f3e5f5
-    style E fill:#fce4ec
-    style F fill:#fce4ec
+    style A fill:#4a90e2,stroke:#333,stroke-width:2px,color:#fff
+    style B fill:#f39c12,stroke:#333,stroke-width:2px,color:#fff
+    style C fill:#27ae60,stroke:#333,stroke-width:2px,color:#fff
+    style D fill:#9b59b6,stroke:#333,stroke-width:2px,color:#fff
 ```
+
+*MCP Server exposes three tools: `predict_m2_future`, `get_m2_current`, `get_m2_statistics`*
 
 **Key Features:**
 - 🎯 **79.6% accuracy** (R² = 0.7958, MAPE = 0.69%)
