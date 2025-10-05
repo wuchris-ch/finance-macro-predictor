@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "m2-predictor": {
+      "command": "python",
+      "args": [
+        "/Users/chris/Projects/finance-macro-predictor/mcp_server.py"
+      ],
+      "description": "M2 Money Supply Prediction Server - Provides tools for predicting future M2 money supply values using a trained Random Forest model",
+      "env": {}
+    }
+  }
+}
